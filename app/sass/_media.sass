@@ -1,0 +1,522 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-height : 530px)
+  .popup
+    display: block
+@media only screen and (max-width : 1439px)
+  .blog:before
+    width: 413px
+  .card-block
+    padding: 1rem
+@media only screen and (max-width : 1200px)
+  .header-right
+    right: 2%
+  .card-block
+    width: 100%
+  .card-zoom
+    left: 5%
+    top: 5%
+    width: 20px
+    height: 20px
+  .card-first
+    flex-direction: column-reverse
+  .lauren-right-item
+    width: calc(50% - 15px)
+    &:nth-child(2n+2)
+      margin-right: 0
+  .basket-drop-one
+    flex-direction: column
+  .basket-drop-left
+    max-width: 100%
+  .rtl .basket-drop-left, .basket-drop-left
+    margin: 30px 0
+    padding: 0
+    border: none
+@media only screen and (max-width : 1024px)
+  .header-right
+    right: 1%
+@media only screen and (max-width : 993px)
+  h2
+    font-size: 24px
+  h1
+    font-size: 36px
+  .header-second
+    padding: 15px 0
+  .home-first, .header-btn, .header-left, .header-search, .header-bottom, .about-bg,  .header-menu
+    display: none
+  .header-link
+    line-height: 250%
+
+  .header-right
+    position: inherit
+    width: 100%
+  .header-offer-btn
+    position: inherit
+    font-size: 13px
+    line-height: 1
+  .header-logo
+    max-width: 241px
+    margin: 20px auto 50px
+  .header-btn-menu
+    display: block
+  .header-offer
+    padding: 2% 4.5%
+    background: #ffffff
+  .home-second
+    padding: 0 4.5%
+    margin: 2.7% 0 60px
+    width: 100%
+  .home-title
+    width: 100%
+    margin: 0 0 10px
+  .home-second-item
+    width: 100%
+    margin: 0 0 4.78% 0
+  .rtl .home-second-item:nth-child(odd)
+    margin-left: 0
+  .home-second-title
+    font-size: 30px
+  .home-second-flex
+    padding-left: 0
+  .rtl .rooms-first
+    margin: 0
+    padding: 4.5%
+  .rooms-first
+    padding: 4.5%
+    margin: 0
+  .text-content
+    padding-left: 0
+  .articles-all
+    margin: 0 auto
+  .articles
+    max-width: calc(610px + 4.5%)
+    margin: 0 auto
+  .about
+    padding: 20px 0 60px
+    max-width: 730px
+    margin: 0 auto
+  .about-first
+    margin-top: 30px
+  .articles
+    padding: 20px 0 60px
+  .articles-container
+    margin-top: 30px
+  .store-second-box
+    height: auto
+  .store-second-item
+    width: 100%
+  .header-menu-second
+    background: rgba(255,255,255,0.95)
+    max-width: 260px
+    width: 100%
+    height: 100%
+    display: block
+    transform: translateX(100px)
+    transition: all 0.5s ease
+  .header-second-img, .header-second-link
+    margin: 0
+  .header-second-logo, .header-second-text, .store-first-top
+    display: none
+  .header-logo-mob, .header-second-close, .header-second-btn_menu, .header-second-input
+    display: block
+  .header-overlay
+    position: fixed
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    z-index: 9
+    background: rgba(#000000,0.8)
+    opacity: 0
+    pointer-events: none
+    transition: all 0.5s ease
+    &.active
+      opacity: 1
+      pointer-events: auto
+      .header-menu-second
+        transform: translateX(0px)
+  .rtl .header-overlay
+    direction: rtl
+  .header-menu-second .header-second-link, .header-second-btn
+    padding: 15px 20px
+    border-top: 1px solid #ececec
+    color: rgba(102, 102, 102, 0.85)
+    font-weight: 700
+    margin: 0
+    border-radius: 0
+    background: none
+    font-size: 1em
+    &:hover
+      color: #000000
+      background: none
+      box-shadow: none
+  .store-hover-heart
+    opacity: 1
+    pointer-events: auto
+  .footer-copyright
+    text-align: center
+  .footer-flex
+    flex-direction: column-reverse
+    align-items: center
+  .store-third-text
+    max-width: 450px
+  .store-discounts
+    left: 20px
+    top: 20px
+    transform: translateY(0)
+  .store-first-buy, .store-first-attention
+    width: 70%
+  .store
+    padding-top: 100px
+  .store-first .slick-dots
+    bottom: 5px
+  .contact-form
+    margin: 0 auto
+  .contact
+    padding: 20px 0 60px
+  .contact-first
+    padding-top: 30px
+  .recommend
+    padding: 0
+  .lauren-second-flex
+    flex-direction: column-reverse
+  .lauren-left, .lauren-right
+    width: 100%
+    max-width: 100%
+  .lauren-right
+    padding-left: 0
+  .lauren
+    padding: 0
+  .lauren-left
+    margin-top: 30px
+  .lauren-first
+    padding: 0
+    margin: 0
+  .basket-drop-one
+    flex-direction: column
+  .basket-drop-right, .basket-drop-left
+    max-width: 100%
+  .basket
+    padding: 0
+  .basket-form
+    flex-direction: column
+    .basket-drop-left
+      padding: 30px
+      border: 2px solid #446084
+  .basket-coupon
+    display: block
+  .basket-coupon .basket-sing-input
+    text-align: center
+  .basket-coupon-btn
+    width: 100%
+  .basket-sing-flex, .basket-form-flex
+    display: block
+  .basket-sing-field, .rtl .basket-sing-field:last-child, .basket-sing-field:last-child, .basket-form-field, .rtl .basket-form-flex .basket-form-field, .basket-form-flex .basket-form-field
+    width: 100%
+    margin: 0
+  .blog-flex
+    display: block
+  .blog-btn-menu
+    display: block
+  .blog-header
+    max-width: 100%
+    padding: 0
+    background: none
+  .blog-header-container
+    background: #ffffff
+    margin: 7.6923% 7.6923% 0
+    padding: 7.6923% 7.6923%
+  .blog-header-mob
+    max-width: 100%
+    display: flex
+    justify-content: space-between
+    padding: 7.6923%
+    align-items: center
+    background-image: url(https://barzilaynet.co.il/blog/wp-content/uploads/2016/05/cropped-cropped-cropped-260-0102-website-bg-KIDS-ALL-1500x8441.jpg)
+    background-repeat: no-repeat
+    background-position: 50% 50%
+    -webkit-background-size: cover
+    -moz-background-size: cover
+    -o-background-size: cover
+    background-size: cover
+  .blog:before
+    content: none
+  .blog-logo
+    margin: 0
+    padding: 0
+  .blog-header-container
+    display: none
+  .blog-menu-link, .blog-drop-link, .blog-header-link
+    color: #333
+    padding: 0.8em 0
+    svg path
+      fill: #333
+  .blog-header .blog-menu, .blog-header-search, .blog-header-content
+    margin-bottom: 11.11%
+  .blog-logo-img
+    margin: 0
+  .card
+    padding: 0 4.5%
+    margin: 30px 0 60px
+  .card-first
+    margin: 20px 0 2% 0
+    padding: 1.75%
+  .card-second
+    padding: 0 1.75% 1.75%
+  .place-articte
+    max-width: 100%
+  .store-first
+    padding: 10px
+  .store, .shop, .contact-item
+    padding-left: 0
+    padding-top: 0
+  .store-second-item
+    padding: 0 0 30px
+  .map
+    padding: 0
+    margin: 0
+  .basket-second
+    padding: 0
+    margin: 0
+  .basket-second-reset
+    padding: 60px 4.5%
+@media only screen and (max-width : 767px)
+  .footer-fixed
+    display: flex
+  .text, .text-link
+    font-size: 14px
+  .articles-all
+    padding: 20px 3.5%
+  .store-second-item
+    padding: 0 0 30px
+  .store-first-buy, .store-first-attention
+    width: 100%
+  .store-first-title
+    font-size: 2.2em
+  .store-first-buy
+    top: 35%
+  .store-discounts
+    left: 10px
+    top: 10px
+    width: 100px
+    height: 100px
+  .store-discounts-dashed
+    width: 90px
+    height: 90px
+  .store-discounts-text
+    font-size: 1em
+  .store-third-text
+    font-size: 14px
+  .store-second-text, .contact-form-title
+    font-size: 16px
+  .contact-form
+    padding: 15px 10px
+  .contact-form-text
+    font-size: 18px
+  .contact-second-row
+    flex-direction: column-reverse
+  .contact-second-col
+    width: 100%
+    padding: 0 0 30px 0
+  .contact-item-info
+    right: 0
+  .contact-accordion-main, .contact-accordion-drop
+    padding: 12px 10px
+  .warranty-img
+    width: 100%
+    margin: 0 auto
+  .warranty-img:nth-child(2n+2)
+    margin: 0 auto
+  .recommend-item
+    width: 50%
+  .store-second-btn
+    font-size: 14px
+    padding: 10px
+    //top: 5px
+  .lauren-fourth-btn_blue
+    top: 35px
+  .lauren-fourth-item
+    flex-direction: column-reverse
+  .lauren-fourth-block, .lauren-fourth-block
+    width: 100%
+  .lauren-first-img
+    height: 450px
+  .lauren-right-item
+    width: calc(50% - 13px)
+    margin-right: 25px
+    &:nth-child(2n+2)
+      margin-right: 0
+  .lauren-fourth-item
+    padding-right: 0
+  .basket-first-tab
+    font-size: 16px
+
+  .basket .header-drop-close
+    position: absolute
+    top: 35px
+    right: 0
+  .basket-drop-mob
+    display: none
+  .lauren-left-input
+    width: 25px
+    padding: 0 5px
+  .basket-drop-img
+    width: 60px
+    height: 25px
+  .basket-drop-text
+    min-width: 60px
+  .basket-drop-link
+    padding: 5px 10px
+  .basket
+    padding: 0
+    .plus, .minus
+      width: 17px
+  .basket-first-tab
+    padding: 0 10px
+  .rtl .basket-first-tab:before
+    border-width: 7px
+    margin-top: -6px
+    left: -10px
+  .rtl .basket-first-tab:after
+    border-width: 4px
+    margin-top: -3px
+    left: -4px
+  .basket-first-tab:before
+    border-width: 7px
+    right: -10px
+    margin-top: -6px
+  .basket-first-tab:after
+    right: -4px
+    border-width: 4px
+    margin-top: -3px
+  .basket-drop-row .basket-drop-text
+    min-width: 60px
+  .shop-second-object
+    display: block
+    .store-second-box, .store-info
+      width: 100%
+  .shop-second-flex
+    flex-direction: column-reverse
+  .shop-second-block
+    flex-direction: column
+    margin-top: 20px
+  .shop-second-result
+    margin-top: 10px
+  .blog-text
+    font-size: 17px
+  .blog-accordion-title
+    padding: 10px 0
+    font-size: 14px
+  .blog-accordion-span
+    margin: 0 15px
+  .card-block
+    padding: 1%
+  .card-gallery-main
+    margin-bottom: 10px
+  rtl .card-gallery-item
+    margin-right: 10px
+    margin-left: 0
+  .card-gallery-item
+    margin-left: 10px
+  .rtl .card-gallery-item:last-child
+    margin-right: 0
+  .rtl .card-gallery-item:first-child
+    margin-left: 10px
+  #go-top
+    bottom: 55px
+  .lauren-fourth-img
+    max-height: 50vw
+  .recommend-item
+    padding: 0 7px 20px
+@media only screen and (max-width : 600px)
+  .blog-container article, .blog-header-container
+    margin: 0
+  .blog-container, .blog-first
+    padding: 0
+  .blog-header .blog-menu
+    border-top: none
+  .blog-header-container
+    padding-top: 0
+  .blog-parination-flex
+    .blog-parination-link
+      display: none
+      &.active
+        display: block
+  .place-cell
+    width: 100%
+  .store-third-img
+    width: 80px
+  .shop
+    padding: 0
+@media only screen and (max-width : 480px)
+  .home-second-title
+    font-size: 21px
+  h1
+    font-size: 28px
+  .breadcrumbs-link
+    font-size: 14px
+  .articles-link-title
+    font-size: 18px
+  .articles-text, .contact-accordion-text
+    font-size: 14px
+  .articles-block-span, .articles-block-link
+    font-size: 11px
+  .store-first-title
+    font-size: 1.9em
+  .contact-form-row
+    display: block
+  .contact-form-input, .contact-form-textarea, .contact .select2-container
+    max-width: 100%
+    width: 100%!important
+    margin-right: 0
+  .contact-form-text
+    margin-bottom: 5px
+  .contact-accordion-main, .lauren-first-btn
+    font-size: 16px
+  .lauren-first-img
+    height: 350px
+  .lauren-left
+    padding: 10px
+  .basket-drop-flex, .basket-drop-flex_one
+    padding: 0
+    min-height: 35px
+  .basket-drop-row
+    padding-bottom: 15px
+  .basket-form .basket-drop-left
+    padding: 15px 10px
+  .basket-form-btn
+    max-width: 100%
+    width: 100%
+    text-align: center
+    display: flex
+    justify-content: center
+  .blog-logo-img
+    max-height: 80px
+  .blog-title
+    font-size: 21px
+    line-height: 1.5
+  .accordion-drop-link, .blog-text-link
+    font-size: 18px
+  .blog-title-one
+    font-size: 31px
+  .card-text, .card-blue, .card-second-text
+    font-size: 16px
+  .card-title
+    padding: 20px 0
+  .card-first-flex
+    flex-direction: column
+  .card-tabs-item
+    font-size: 18px
+  .popup-flex
+    display: block
+  .popup
+    display: block
+  .popup-flex
+    margin: 20px
+  .popup-img
+    max-height: 115px
+  .popup-form
+    padding: 20px 10px
